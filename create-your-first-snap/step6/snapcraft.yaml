@@ -1,0 +1,22 @@
+name: hello
+version: "2.10"
+summary: GNU Hello, the "hello world" snap
+description: |
+  GNU hello prints a friendly greeting.
+grade: devel
+confinement: strict
+
+apps:
+  hello:
+    command: bin/hello
+  bash:
+	command: bash
+
+parts:
+  gnu-hello:
+	source: http://ftp.gnu.org/gnu/hello/hello-2.10.tar.gz
+	plugin: autotools
+  gnu-bash:
+	source: http://ftp.gnu.org/gnu/bash/bash-4.3.tar.gz
+	plugin: autotools
+    configflags: ["--infodir=/var/bash/info"]
