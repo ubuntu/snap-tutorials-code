@@ -1,0 +1,21 @@
+name: chuck-norris-webserver
+version: '1.0.0'
+summary: Chuck Norris quotation nodejs server
+description: |
+  This example shows how to build a nodejs web server. This enables us to
+  demonstrate how service works, basic confinement rules to access and listen
+  on the network, as well as the nodejs snapcraft plugin.
+grade: devel
+confinement: strict
+
+apps:
+  node-service:
+    command: bin/chuck-norris-app
+    daemon: simple
+    restart-condition: always
+    plugs: [network-bind]
+
+parts:
+  webserver:
+    source: .
+    plugin: nodejs
