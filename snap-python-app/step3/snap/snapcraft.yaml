@@ -1,0 +1,20 @@
+name: httpstat
+version: '1.1.3'
+summary: Curl statistics made simple
+description: |
+    httpstat is a utility that analyses show fast is a website
+    when you are trying to connect to it.
+    This utility is particularly useful to Web administrators.
+grade: stable
+confinement: devmode
+
+apps: 
+  httpstat:
+    command: httpstat
+
+parts:
+  httpstat:
+    source: https://github.com/reorx/httpstat.git
+    source-tag: v1.1.3
+    plugin: python
+    stage-packages: [curl]
