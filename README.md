@@ -1,2 +1,2 @@
-# snap-codelabs-code
-Code and examples used in snap related codelabs
+# snap-tutorials-code
+Code and examples used in snap related tutorials.
