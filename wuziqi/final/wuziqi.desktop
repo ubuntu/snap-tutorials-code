@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=wuziqi
-Exec=ubuntu-html5-app-launcher $@ --www=www --inspector
-Icon=wuziqi.png
-Terminal=false
-Type=Application
-X-Ubuntu-Touch=true
-
