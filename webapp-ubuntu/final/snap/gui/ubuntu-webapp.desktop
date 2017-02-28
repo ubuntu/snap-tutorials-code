@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Terminal=false
+Exec=ubuntu-webapp
+Name=Ubuntu
+Icon=${SNAP}/meta/gui/ubuntu.png

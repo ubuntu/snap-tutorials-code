@@ -1,0 +1,17 @@
+{
+    "name": "wuziqi.ubuntu",
+    "description": "description of wuziqi",
+    "architecture": "all",
+    "title": "wuziqi",
+    "hooks": {
+        "wuziqi": {
+            "apparmor": "wuziqi.apparmor",
+            "desktop":  "wuziqi.desktop"
+        }
+    },
+    "version": "0.1",
+    "maintainer": "XiaoGuo, Liu <xiaoguo.liu@canonical.com>",
+    "framework" : "ubuntu-sdk-14.10"
+}
+
+

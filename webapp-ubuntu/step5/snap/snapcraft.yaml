@@ -1,0 +1,34 @@
+name: ubuntu-webapp
+version: '1.0'
+summary: ubuntu webapp
+description: |
+  Webapp version of the ubuntu web application.
+
+grade: stable
+confinement: strict
+
+apps:
+  ubuntu-webapp:
+    command: webapp-launcher --enable-back-forward --webappUrlPatterns=http?://www.ubuntu.com/* http://www.ubuntu.com/
+    plugs:
+      - browser-sandbox
+      - network
+      - opengl
+      - unity7
+
+plugs:
+  browser-sandbox:
+    interface: browser-support
+    allow-sandbox: false
+  platform:
+    interface: content
+    content: ubuntu-app-platform1
+    target: ubuntu-app-platform
+    default-provider: ubuntu-app-platform
+
+parts:
+  webapp-container:
+    after: [desktop-ubuntu-app-platform,webapp-helper]
+    plugin: nil
+
+

@@ -1,0 +1,25 @@
+name: ubuntu-webapp
+version: '1.0'
+summary: ubuntu webapp
+description: |
+  Webapp version of the ubuntu web application.
+
+grade: stable
+confinement: devmode
+
+plugs:
+  browser-sandbox:
+    interface: browser-support
+    allow-sandbox: false
+  platform:
+    interface: content
+    content: ubuntu-app-platform1
+    target: ubuntu-app-platform
+    default-provider: ubuntu-app-platform
+
+parts:
+  webapp-container:
+    after: [desktop-ubuntu-app-platform,webapp-helper]
+    plugin: nil
+
+
