@@ -9,7 +9,7 @@ confinement: strict
 
 apps:
   rssreader:
-    command: desktop-launch $SNAP/lib/x86_64-linux-gnu/bin/rssreader
+    command: desktop-launch rssreader
     plugs: [network,network-manager,unity7,opengl]
 
 plugs:
