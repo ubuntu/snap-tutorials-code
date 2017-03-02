@@ -1,0 +1,17 @@
+{
+    "name": "rssreader.liu-xiao-guo",
+    "description": "description of rssreader",
+    "architecture": "@CLICK_ARCH@",
+    "title": "rssreader",
+    "hooks": {
+        "rssreader": {
+            "apparmor": "rssreader/rssreader.apparmor",
+            "desktop":  "rssreader/rssreader.desktop"
+        }
+    },
+    "version": "0.1",
+    "maintainer": "XiaoGuo, Liu <xiaoguo.liu@canonical.com>",
+    "framework" : "ubuntu-sdk-15.04"
+}
+
+
