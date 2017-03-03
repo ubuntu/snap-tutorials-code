@@ -1,0 +1,1 @@
+This is sample demo showing how to snap a REAL HTML5 app into a snap app. The application originally came from an application for Ubuntu phone, and it is source code can be found at https://code.launchpad.net/~liu-xiao-guo/debiantrial/wuziqi
