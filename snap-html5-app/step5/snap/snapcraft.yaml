@@ -11,8 +11,8 @@ confinement: devmode
 
 parts:
   webapp-container:
-    after: [ webapp-helper, desktop-ubuntu-app-platform ]
     plugin: dump
     source: .
-    stage-packages:
-      - ubuntu-html5-ui-toolkit
+    stage-packages: [ ubuntu-html5-ui-toolkit ]
+    after: [ webapp-helper, desktop-ubuntu-app-platform ]
+

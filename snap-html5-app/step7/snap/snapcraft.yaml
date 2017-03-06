@@ -13,11 +13,11 @@ parts:
   webapp-container:
     source: .
     plugin: dump
-    after: [ webapp-helper, desktop-ubuntu-app-platform ]
-    stage-packages:
-      - ubuntu-html5-ui-toolkit
+    stage-packages: [ ubuntu-html5-ui-toolkit ]
     organize:
       'usr/share/ubuntu-html5-ui-toolkit/': www/ubuntu-html5-ui-toolkit
     prime:
       - usr/*
       - www/*
+    after: [ webapp-helper, desktop-ubuntu-app-platform ]
+
