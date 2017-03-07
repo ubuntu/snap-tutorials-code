@@ -9,6 +9,15 @@ description: |
 grade: stable
 confinement: strict
 
+apps:
+  wuziqi:
+    command: webapp-launcher www/index.html
+    plugs:
+      - browser-sandbox
+      - opengl
+      - network
+      - unity7
+
 plugs:
   browser-sandbox:
     interface: browser-support
@@ -30,4 +39,3 @@ parts:
       - usr/*
       - www/*
     after: [ webapp-helper, desktop-ubuntu-app-platform ]
-

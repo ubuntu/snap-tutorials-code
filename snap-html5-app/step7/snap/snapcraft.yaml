@@ -7,7 +7,17 @@ description: |
   into a line is the winner.
 
 grade: stable
-confinement: devmode
+confinement: strict
+
+plugs:
+  browser-sandbox:
+    interface: browser-support
+    allow-sandbox: false
+  platform:
+    interface: content
+    content: ubuntu-app-platform1
+    target: ubuntu-app-platform
+    default-provider: ubuntu-app-platform
 
 parts:
   webapp-container:
