@@ -9,7 +9,7 @@ confinement: strict
 
 apps:
   ubuntu-webapp:
-    command: webapp-launcher --enable-back-forward --webappUrlPatterns=http?://www.ubuntu.com/* http://www.ubuntu.com/
+    command: webapp-launcher --enable-back-forward --webappUrlPatterns=https?://www.ubuntu.com/* http://www.ubuntu.com/
     plugs:
       - browser-sandbox
       - network
