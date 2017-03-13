@@ -10,7 +10,7 @@ confinement: strict
 apps:
   rssreader:
     command: desktop-launch rssreader
-    plugs: [network,network-manager,unity7,opengl]
+    plugs: [network, network-manager, unity7, opengl]
 
 plugs:
   platform:
