@@ -2,9 +2,7 @@ name: wuziqi
 version: '0.1'
 summary: Wuziqi Game. It shows how to snap a html5 app into a snap
 description: |
-  This is a Wuziqi Game. There are two kind of chesses: white and black. 
-  Two players play it in turn. The first who puts the same color chesses 
-  into a line is the winner.
+  This is a Wuziqi Game.
 
 grade: stable
 confinement: devmode
