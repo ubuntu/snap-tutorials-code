@@ -11,5 +11,5 @@ parts:
   webapp-container:
     source: .
     plugin: dump
-    after: [ webapp-helper, desktop-ubuntu-app-platform ]
+    after: [webapp-helper, desktop-ubuntu-app-platform]
 
