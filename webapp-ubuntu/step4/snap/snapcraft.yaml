@@ -19,7 +19,6 @@ plugs:
 
 parts:
   webapp-container:
-    after: [desktop-ubuntu-app-platform,webapp-helper]
     plugin: nil
-
+    after: [desktop-ubuntu-app-platform, webapp-helper]
 
